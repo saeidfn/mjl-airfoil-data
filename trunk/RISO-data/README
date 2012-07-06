@@ -1,0 +1,64 @@
+This data was downloaded from the RISO website - http://www.risoe.dtu.dk/Research/sustainable_energy/wind_energy/projects/Profcat.aspx?sc_lang=en
+Michael Lawson 20120706
+******************************
+
+This directory contains the collection of data that have been used to
+produce the figures of the following report:
+
+'Wind Turbine Airfoil Catalogue', F.Bertagnolio, N.Sørensen, J.Johansen
+and P.Fuglsang, Risø-R-1280(EN), Roskilde, Denmark, August 2001.
+
+...and subsequent releases. A pdf version of this report is available
+on internet at the following address:
+http://www.risoe.dk/rispubl/VEA/ris-r-1280.htm
+
+****
+
+Each directory contains data associated to one specific airfoil. The
+names used for these directories corresponds to the ones used in the
+report. The directory NASA-WS contains data obtained for several NACA
+wing sections for which computational results were compared with
+experimental data by Abbot and von Doenhoff (see report for reference).
+
+Each airfoils directory can be subdivided in other directories when
+appropriate, e.g. when several configuration tests have been performed.
+
+All computational and experimental conditions are reported in the above
+mentionned report.
+
+****
+
+Nomenclature for the files is as follows:
+
+Files 'prof.dat' contains the geometry of the airfoils that have been used
+in the computations (both for EllipSys2D and XFOIL). In some cases, it
+has been transformed from the original geometry which has a blunt trailing
+edge to a sharp trailig edge geometry.
+
+Files starting as cl... cd... cm... cld... cldm... contains characteristic
+data as angle of attack, lift, drag and moment coefficients, ususally in
+this order, unless otherwise specified as commentary in the file itself.
+
+Files starting as cp... cf... or cfp contains pressure and/or skin friction
+coefficients as a function of the chord position.
+
+Files ending with .exp correspond to experimental data. References can be
+found in the catalogue itself.
+
+Files ending with .xf correspond to numerical data obtained with XFOIL.
+
+Files ending with .ellipsys correspond to numerical data obtained with
+EllipSys2D.
+
+****
+
+For further informations, please contact one of the authors at the
+following email addresses:
+franck.bertagnolio@risoe.dk
+niels.soerensen@risoe.dk
+jeppe.johannes@risoe.dk
+
+****
+
+Risø, September 2002.
+
