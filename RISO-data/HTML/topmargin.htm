@@ -1,0 +1,126 @@
+<html>
+
+<head>
+<title>TOP MARGIN</title>
+<script language="JavaScript">
+
+<!--
+able = true
+
+n1on = new Image();
+n1on.src = "http://www.risoe.dk/images/nav_ta_lysgraa_search.gif";
+
+n1off = new Image();
+n1off.src = "http://www.risoe.dk/images/nav_t_lysgraa_search.gif";
+
+n2on = new Image();
+n2on.src = "http://www.risoe.dk/images/nav_ta_lysgraa_map.gif";
+
+n2off = new Image();
+n2off.src = "http://www.risoe.dk/images/nav_t_lysgraa_map.gif";
+
+n3on = new Image();
+n3on.src = "http://www.risoe.dk/images/nav_ta_lysgraa_con.gif";
+
+n3off = new Image();
+n3off.src = "http://www.risoe.dk/images/nav_t_lysgraa_con.gif";
+
+n4on = new Image();
+n4on.src = "http://www.risoe.dk/images/nav_ta_lysgraa_dep.gif";
+
+n4off = new Image();
+n4off.src = "http://www.risoe.dk/images/nav_t_lysgraa_dep.gif";
+
+n5on = new Image();
+n5on.src = "http://www.risoe.dk/images/nav_ta_lysgraa_home.gif";
+
+n5off = new Image();
+n5off.src = "http://www.risoe.dk/images/nav_t_lysgraa_home.gif";
+
+
+b1on = new Image();
+b1on.src = "http://www.risoe.dk/images/nav_ba_lysgraa_search.gif";
+
+b1off = new Image();
+b1off.src = "http://www.risoe.dk/images/nav_b_lysgraa_search.gif";
+
+b2on = new Image();
+b2on.src = "http://www.risoe.dk/images/nav_ba_lysgraa_map.gif";
+
+b2off = new Image();
+b2off.src = "http://www.risoe.dk/images/nav_b_lysgraa_map.gif";
+
+b3on = new Image();
+b3on.src = "http://www.risoe.dk/images/nav_ba_lysgraa_con.gif";
+
+b3off = new Image();
+b3off.src = "http://www.risoe.dk/images/nav_b_lysgraa_con.gif";
+
+b4on = new Image();
+b4on.src = "http://www.risoe.dk/images/nav_ba_lysgraa_dep.gif";
+
+b4off = new Image();
+b4off.src = "http://www.risoe.dk/images/nav_b_lysgraa_dep.gif";
+
+b5on = new Image();
+b5on.src = "http://www.risoe.dk/images/nav_ba_lysgraa_home.gif";
+
+b5off = new Image();
+b5off.src = "http://www.risoe.dk/images/nav_b_lysgraa_home.gif";
+
+b6on = new Image();
+b6on.src = "http://www.risoe.dk/images/nav_ba_lysgraa_top.gif";
+
+b6off = new Image();
+b6off.src = "http://www.risoe.dk/images/nav_b_lysgraa_top.gif";
+
+
+function ChangeOn(name,target)
+{
+  if (able)
+  {
+        document.images[target].src=eval(name + "on").src;
+        window.status='';
+        return(true);
+  }
+}
+
+function ChangeOff(name,target)
+{
+  if (able)
+  {
+    document.images[target].src=eval(name + "off").src;
+    window.status='';
+    return(true);
+  }
+}
+
+function change(to) {
+  var url = unescape(window.location.href);
+  var n = url.lastIndexOf('_')+1;
+  if (n>1)
+    window.location.href = url.substr(0, n) + to + url.substr(n+to.length);
+}
+
+function narrow(yes) {
+  if (document.all) with (document) {
+    col_1_1_1.width = col_2_1_1.width = yes ? 35 : 106;
+    tab_1.width = yes ? 672 : 745;
+        tab_2.width = yes ? 566 : 636;
+  }
+}
+//-->
+
+</script>
+</head>
+
+<body bgColor="#cccccc" leftMargin="0" link="#003366" rightMargin="0" topMargin="0" vLink="#003366" marginheight="0" marginwidth="0">
+
+<a href="http://www.risoe.dk/search/soguk.htm" onmouseout="ChangeOff('n1','c1')" onmouseover="ChangeOn('n1','c1')" TARGET="_top"><img alt="Search" border="0" height="71" name="c1" src="http://www.risoe.dk/images/nav_t_lysgraa_search.gif" width="106"></a>
+<a href="http://www.risoe.dk/vejviser/index_uk.htm" onmouseout="ChangeOff('n2','c2')" onmouseover="ChangeOn('n2','c2')" TARGET="_top"><img alt="Map" border="0" height="71" name="c2" src="http://www.risoe.dk/images/nav_t_lysgraa_map.gif" width="106"></a>
+<a href="http://www.risoe.dk/phone/" onmouseout="ChangeOff('n3','c3')" onmouseover="ChangeOn('n3','c3')" TARGET="_top"><img alt="Contact" border="0" height="71" name="c3" src="http://www.risoe.dk/images/nav_t_lysgraa_con.gif" width="106"></a>
+<a href="http://www.risoe.dk/vea/index.htm" onmouseout="ChangeOff('n4','c4')" onmouseover="ChangeOn('n4','c4')" TARGET="_top"><img alt="Return to Department" border="0" height="71" name="c4" src="http://www.risoe.dk/images/nav_t_lysgraa_dep.gif" width="106"></a>
+<a href="http://www.risoe.dk/" onmouseout="ChangeOff('n5','c5')" onmouseover="ChangeOn('n5','c5')" TARGET="_top"><img alt="Home" border="0" height="71" name="c5" src="http://www.risoe.dk/images/nav_t_lysgraa_home.gif" width="106"><img alt="Home" border="0" height="71" src="http://www.risoe.dk/images/logo.gif" width="106"></a>
+
+</body>
+</html>

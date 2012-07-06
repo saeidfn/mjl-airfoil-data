@@ -1,0 +1,13 @@
+BODY { BACKGROUND-COLOR: #cccccc; MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px; MARGIN-TOP: 0px; margin-width: 0; margin-height: 0 }
+A:link { COLOR: #006699; TEXT-DECORATION: none }
+A:visited { COLOR: #006699; TEXT-DECORATION: none }
+A:active { COLOR: #cc0066; TEXT-DECORATION: none }
+A:hover { COLOR: #cc0066; TEXT-DECORATION: underline }
+P.text { FONT-SIZE: 10pt; FONT-WEIGHT: normal; MARGIN-TOP: 0px; PADDING-TOP: 1px }
+P.tdtext10 { FONT-FAMILY: Arial, Helvetica, Verdana; FONT-SIZE: 10pt; FONT-WEIGHT: normal; MARGIN-LEFT: 10px; MARGIN-RIGHT: 10px }
+P.tdtext8 { FONT-FAMILY: Arial, Helvetica, Verdana; FONT-SIZE: 8pt; FONT-WEIGHT: normal; MARGIN-LEFT: 10px; MARGIN-RIGHT: 10px }
+P.indent { MARGIN-LEFT: 10px; MARGIN-TOP: 0px; PADDING-TOP: 0px }
+P.menu { FONT-FAMILY: Arial, Helvetica, Verdana; FONT-SIZE: 10pt; FONT-WEIGHT: bold; MARGIN: 0px 10px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px }
+P.picturetext { MARGIN-LEFT: 10px; MARGIN-RIGHT: 10px; MARGIN-TOP: 5px; PADDING-TOP: 0px }
+P.figur { FONT-FAMILY: Arial, Helvetica, Verdana; FONT-SIZE: 8pt; FONT-WEIGHT: normal; MARGIN-TOP: 5px; PADDING-TOP: 0px }
+P.email { FONT-FAMILY: Arial, Helvetica, Verdana; FONT-SIZE: 8pt; FONT-WEIGHT: normal; MARGIN-LEFT: 5px; MARGIN-RIGHT: 0px }

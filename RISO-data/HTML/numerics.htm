@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>NUMERICS</title>
+<link rel="STYLESHEET" href="./mystyle.css" type="text/css">
+</head>
+
+<body BGPROPERTIES="FIXED"
+face="ARIAL" size="3" text="#000000" bgcolor="#cccccc">
+
+<table BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="495"><tr><td>
+
+<br>
+<center>
+<H2>DETAILS ON THE NUMERICAL TOOLS</H2>
+</center>
+
+<P><hr size=3></P>
+<br>
+
+
+<p>Two numerical simulation codes were used to obtain
+the numerical data: <A HREF="http://www.risoe.dk/vea-aed/numwind/index.htm"
+TARGET="_blank"><tt><font size=+1>EllipSys2D</font></tt></A> and
+<A HREF="http://raphael.mit.edu/xfoil/" TARGET="_blank">
+XFOIL</A>.</p><br>
+
+<h6><tt><font size=+1>EllipSys2D</font></tt></h6>
+ 
+<p><A HREF="http://www.risoe.dk/vea-aed/numwind/index.htm" TARGET="_blank">
+<tt><font size=+1>EllipSys2D</font></tt></A> is a numerical
+Navier-Stokes flow solver. This code has been developed jointly
+at DTU (<A HREF="http://www.afm.dtu.dk/" TARGET="_blank">Dept. of
+Mechanical Engineering, Fluid Mechanics</A>) and Ris&oslash; by
+<A HREF="http://www.afm.dtu.dk/Staff/jam/index.html"
+TARGET="_blank">Jess Michelsen</A> and <A
+HREF="http://met-hp-1.risoe.dk/cgi-bin/view.pl?id=94"
+TARGET="_blank">Niels S&oslash;rensen</A>. It is designed to solve
+the two-dimensional Navier-Stokes equations for an
+incompressible fluid. It uses a cell-centered grid arrangement
+for the pressure field and the cartesian velocity components. The
+equations are discretised by means of a finite volume
+formulation. The well-known velocity-pressure decoupling
+is circumvented by using the Rhie and Chow interpolation
+technique. The SIMPLE algorithm is used for solving the momentum
+and pressure equations in a predictor-corrector fashion. The
+convective terms were discretised by means of the second order
+in space SUDS scheme (no limiter was used).</p>
+
+<p>All the meshes that were used for the Navier-Stokes computations
+presented in this database are C-meshes around the airfoils. They
+were obtained by using the mesh generator <A
+HREF="./../HTML/biblio.htm#SorensenHypGrid2D">HypGrid2D</A> developed
+at Ris&oslash; by <A HREF="http://met-hp-1.risoe.dk/cgi-bin/view.pl?id=94"
+TARGET="_blank">Niels S&oslash;rensen</A>.</p>
+
+<p>Steady state computations were nearly always performed. However, in
+a few cases, numerical instabilities prevent the convergence of the
+computations. In these few cases, unsteady computations were
+performed.</p>
+
+<p>Turbulence was modelled by the <em>k</em>-&#969; (k-omega) SST
+model by <A HREF="./../HTML/biblio.htm#Menter">Menter</A>. In
+some cases, the flow was considered as fully
+turbulent, i.e. the turbulent viscosity is directly given by
+the turbulence model that is implemented in the numerical
+code. In some other cases, a transition model
+was used to account for the transition towards turbulence
+phenomenon on the airfoil surface. Its purpose is to determine
+a location along the surface of the airfoil, such that the flow
+can be considered as laminar upstream this point, and as
+transitional downstream. As a consequence, the turbulent viscosity
+is switched off on the boundary layer stations upstream the
+transition point. Downstream, the turbulent viscosity is given
+by the turbulence model. However, in order to model the
+turbulence intermittency that occurs in transitional flows, the
+turbulent viscosity was weighted by a multiplicative factor that
+grows from 0 (at the transition point) to 1 (at the end of the
+transitional region) according to an empirical function given
+by <A HREF="./../HTML/biblio.htm#ChenT">Chen and Thyson</A>. The
+transition model by <A HREF="./../HTML/biblio.htm#Michel">Michel
+</A> was used.</p><br>
+
+<p>Further details on the numerical code and references for
+the different numerical and modelling techniques can be found
+in the <A HREF="./report.htm">Wind Turbine Airfoil
+Catalogue</A> report itself, or in the following
+references:<br>
+<b>J.A. Michelsen</b>, Basis3D - A Platform for Development
+of Multiblock PDE Solvers, <em>Tech. Report, Technical University
+of Denmark, AFM 92-05</em>, 1992.<br>
+<b>J.A. Michelsen</b>, Block Structured Multigrid Solution of 2D
+and 3D Elliptic PDE's, <em>Tech. Report, Technical University of
+Denmark, AFM 94-06</em>, 1994.<br>
+<b>N.N. S&oslash;rensen</b>, General Purpose Flow Solver Applied
+to Flow over Hills, <em>Tech. Report, Ris&oslash; National
+Laboratory, Roskilde, Denmark, PhD
+Thesis, Ris&oslash;-R-827(EN)</em>, June 1997.</p><br><br>
+
+<h4>XFOIL</h4>
+
+<p><A HREF="http://raphael.mit.edu/xfoil/" TARGET="_blank">XFOIL
+</A> (written by <A HREF="./../HTML/biblio.htm#XFOIL">Prof. Mark
+Drela</A> , MIT) is an interactive
+program for the design and analysis of subsonic isolated
+airfoils. It is based on a panel method combined with a viscous
+boundary layer formulation. The wake simulation option was also
+activated. The Reynolds number was set to the same value as
+in the Navier-Stokes computations (see above). Note that
+all computational data obtained with this code were performed
+with a <b>transition model</b> that is using the Orr-Sommerfeld
+transition criterion implemented in this code, <b>except</b> when
+the results were compared with data originating from experiments
+for which transition was triggered by a device on the airfoil. In
+this last case, the transition was <b>fixed</b> at the same
+location as in the experiment. In our case, airfoil surfaces were
+always discretised into 120 panels.</p><br><br>
+
+<br>
+<p>Details on the specific computational conditions for each
+airfoil can be found in the <A HREF="./report.htm">Wind Turbine
+Airfoil Catalogue</A> report.</p><br>
+
+<br>
+<p><u><b><font color="#ff0000">IMPORTANT NOTE:</font></b></u> All
+computational data are obtained from genuine 2D simulations. There
+is no correction for tip-losses, or other correction or approximation.
+
+<br><br><br><br>
+
+<A HREF="./main.htm"><B>Back to airfoil catalogue home page</B></A>
+<br><br>
+</td></tr></table>
+</body>
+</html>
